@@ -15,24 +15,35 @@ data files, computer scripts to run the analysis, and presentation documents to 
 
 ### materials
 
-- week 1: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+Week 1 
 
-- week 2: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html)  
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
 
-- week 3: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+Week 2 
 
-- week 4: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html)  
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
 
-- week 5: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+Week 3 
 
-- week 6: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html)  
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
 
-- week 7: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+Week 4 
 
-- week 8: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html)  
+- Topic [[assignments]](pages/item.html) [[tutorials]](pages/item.html) [[slides]](pages/item.html) [[notes]](pages/item.html) 
 
-- week 9: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
 
-- week 10: topic, topic, and topic. [[Assignments]](pages/item.html) [[Tutorials]](pages/item.html) [[Slides]](pages/item.html) [[Notes]](pages/item.html) 
+
+
+### resources
+
+- useful links 
 
 
