@@ -16,11 +16,11 @@ library(readxl)
 library(dplyr)
 ```
 
-```{r agenda-functions}
-# include set_path_for_runall in every Rmd script run from the 
-# runall.R script if the goal is to knit(Rmd) to create the 
-# md file correctly formatted for gh-pages 
-set_path_for_read <- function(file_dir) {
+```{r Rmd-functions}
+# set_path_for_read_write
+# include in every Rmd script run from the runall.R script 
+# to render Rmd -> md with correct gh-pages header
+set_path_for_read_write <- function(file_dir) {
 	if (exists('runall_obj')) { # does the object exist?
 			file_dir <- paste0(proj_dir, '/', file_dir)
 			} 
@@ -30,7 +30,7 @@ set_path_for_read <- function(file_dir) {
 
 ```{r create-agenda}
 # required to run this Rmd from runall.R script
-file_dir <- set_path_for_read('data/agenda.xlsx')
+file_dir <- set_path_for_read_write('data/agenda.xlsx')
 df <- read_excel(file_dir) %>% 
 	mutate(space1 = NA, space2 = NA) %>%
   select(time, space1, activity, space2, format) %>%
