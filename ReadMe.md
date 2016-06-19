@@ -1,8 +1,8 @@
-### creating-reproducible-reports
+### me497-reproducible-research
 
-The workshop introduces reproducible reporting---a component of the  larger reproducible research ecosystem---to the R novice. No prior experience with R or RStudio is required.
+In this course, we explore the practices and principles of reproducible research by learning to organize a technical project for reproducibility from the beginning of the project and to explicitly link the files for computing, results, and narrative. The course takes you through an entire reproducible research workflow. Our software environment is R and RStudio---no prior experience required.
 
-The workshop website on GitHub: [http://dsr-rhit.github.io/creating-reproducible-reports](http://dsr-rhit.github.io/creating-reproducible-reports)
+The course website on GitHub: [http://dsr-rhit.github.io/me497-reproducible-research](http://dsr-rhit.github.io/me497-reproducible-research)
 
 
 
