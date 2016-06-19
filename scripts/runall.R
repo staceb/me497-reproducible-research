@@ -11,8 +11,10 @@ opts_chunk$set(include=TRUE, echo=FALSE, message=FALSE)
 
 # the existence of the runall_flag helps with directory issues when 
 # knitting the Rmd from this R script
+proj_dir <- 'me497-reproducible-research'
 runall_obj <- NULL
 knit('index.Rmd', output = 'index.md')
+knit('pages/02-agenda.Rmd', output = 'pages/02-agenda.md')
 rm(runall_obj) # removes it
 
 
