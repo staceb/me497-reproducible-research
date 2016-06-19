@@ -1,6 +1,6 @@
 ---
 layout: page
-title: course home
+title: welcome
 tagline: reproducible research for the R novice
 description: reproducible research for the R beginner with RStudio, knitr
 ---
