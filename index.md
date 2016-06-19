@@ -1,6 +1,6 @@
 ---
 layout: page
-title: me497 reproducible research
+title: course home
 tagline: reproducible research for the R novice
 description: reproducible research for the R beginner with RStudio, knitr
 ---
