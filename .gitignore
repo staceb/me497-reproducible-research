@@ -1,0 +1,16 @@
+_site
+
+.Renviron
+.Rhistory
+.Rproj.user
+
+
+*.Rproj
+
+
+*.docx
+*/*.docx
+*/notebook*
+pages/*.html
+index.html
+
