@@ -9,12 +9,12 @@ output: html_document
 ```{r setup, include = FALSE}
 library(knitr)
 opts_chunk$set(message = FALSE, include = FALSE, echo = FALSE, warning = FALSE)
-library(readxl)
+library(readr)
 library(dplyr)
 ```
 
 ```{r}
-df <- read_excel('pages/calendar.xlsx') %>% 
+df <- read_csv('data/calendar.csv') %>% 
 	mutate(space1 = NA, space2 = NA) %>%
   select(week, lessons, space1, assign, space2, topics)
 df[is.na(df)] <- " " # replaces NAs with 2 blanks

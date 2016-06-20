@@ -1,0 +1,26 @@
+time,elapsed,activity,format,resources,notes,tutorial tasks
+,,day 1,,,,
+10,10,Finding partners and the wi-fi,,URL,"form pairs, get online",install software before the workshop
+10,20,Defining reproducible research,think-pair-share,handout,mystery question,read data
+10,30,Surveying the RR ecosystem,lecture,slides,connect shared ideas to big RR,manipulate data
+5,35,Establishing the workshop goals,lecture,slides,create a reproducible report,analyze data
+5,40,Considering a sample report,lecture,a finished document,note manual operations,extract specific results
+10,50,Identifying manual operations,pair-share,handout,cut/paste/gui-clicks/etc.,data tables
+15,65,*break*,,,,graphs
+50,115,Creating a dynamic report,individual work,software tutorial,progress on data and analysis (and late installers),equations
+15,130,*break*,,,,inline results
+40,170,Continue the tutorials,individual work,software tutorial,progress on the Rmd report,external media
+10,180,Submitting questions,reflection,handout,"if optional HW, can start early on your own sample",headings
+,,day 2,,,,
+10,10,Answering questions,discussion,FAQ,"post FAQ, hit highlights",references
+30,40,Continue the tutorials,individual work,software tutorial,at your own pace,update with new data
+5,45,The day the data changed,demo,revised data,"change the data, recompile",
+5,50,Reviewing tasks we've scripted,lecture,slides,,
+15,65,*break*,,,,
+10,75,Planning for reproducibility,lecture,slides,various directory plans,
+40,115,Starting your own project,individual work,bring your own,or continue the sample,
+15,130,*break*,,,,
+20,150,Continuing your project,individual work,bring your own,,
+10,160,Summarizing your progress,pair-share,handout,Revisit the workshop goals,
+10,170,Looking ahead,discussion,slides,where do you go from here?,
+10,180,Assessing the workshop,reflection,survey,,

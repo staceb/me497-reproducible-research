@@ -13,7 +13,7 @@ opts_chunk$set(include = FALSE, echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ```{r lib}
-library(readxl)
+library(readr)
 library(dplyr)
 ```
 
@@ -31,7 +31,7 @@ library(dplyr)
 
 ```{r create-agenda}
 # required to run this Rmd from runall.R script
-df <- read_excel('../data/agenda.xlsx') %>% 
+df <- read_csv('../data/agenda.csv') %>% 
 	mutate(space1 = NA, space2 = NA) %>%
   select(time, space1, activity, space2, format) %>%
 	rename(' ' = space1, ' ' = space2)
