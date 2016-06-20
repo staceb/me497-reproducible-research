@@ -8,32 +8,36 @@
 # instead use relative paths from their directories
 library(knitr)
 library(stringr)
-opts_chunk$set(include=TRUE, echo=FALSE, message=FALSE)
 
-# do the knitting
+# knit one file at a time
 knit_Rmd_to_md <- function(file_name) {
   input  <- file_name
   output <- str_replace(file_name, '.Rmd', '.md')
   knit(input = input, output = output)
 }
 
-# find all Rmd files in the project directory for print to console
-find_all_Rmd <- list.files(path = "."
-													 , pattern = "\\.Rmd$"
-													 , full.names = TRUE
-													 , recursive = TRUE)
-
 # list only those directories where knit to md needed
 paths_to_search <- c(".", "./pages")
 
 # obtain file names with full paths
-Rmd_rendered <- list.files(path = paths_to_search
-												, pattern = "\\.Rmd$"
-												, full.names = TRUE)
+Rmd_to_knit <- list.files(path = paths_to_search
+													, pattern = "\\.Rmd$"
+													, full.names = TRUE)
+
+# for comparison, find all Rmd files in the project
+all_Rmd <- list.files(path = "."
+													 , pattern = "\\.Rmd$"
+													 , full.names = TRUE
+													 , recursive = TRUE)
 
 # knit
-sapply(Rmd_rendered, knit_Rmd_to_md)
+sapply(Rmd_to_knit, knit_Rmd_to_md)
 
+# print to console
+knitted <- all_Rmd %in% Rmd_to_knit
+not_knitted <- all_Rmd[!knitted]
+cat("\n\nRmd files rendered by runall.R\n", Rmd_to_knit, sep = "\n")
+cat("\nRmd files not rendered\n", not_knitted, sep = "\n")
 
 
 
@@ -73,8 +77,9 @@ unlink("reports/*.html")
 
 # ----------------------------------------------------
 
-cat("\n\nRmd files in project directory\n", find_all_Rmd, sep = "\n")
-cat("\nRmd files rendered by runall.R\n", Rmd_rendered, sep = "\n")
+
+
+
 
 # try render
 # library(rmarkdown)
