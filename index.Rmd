@@ -19,12 +19,11 @@ df <- read_excel('pages/calendar.xlsx') %>%
 df[is.na(df)] <- " " # replaces NAs with 2 blanks
 ```
 
-
 In technical work or research that utilizes a computer, the three common file types are data files, computer scripts to run the analysis, and presentation documents to report findings. This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings. 
 
 ### planning
 
-- Syllabus and policies
+Syllabus and policies 
 
 ### calendar
 
