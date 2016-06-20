@@ -23,3 +23,6 @@ pages/*.html
 reports/*.html
 scripts/*.html
 
+# ignore pages/Rmd
+pages/*.Rmd
+
