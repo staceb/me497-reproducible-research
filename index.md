@@ -19,16 +19,12 @@ In technical work or research that utilizes a computer, the three common file ty
 - Syllabus and policies
 
 
-| week| day|topic_link      |hw_link        |topic                                 |
-|----:|---:|:---------------|:--------------|:-------------------------------------|
-|    1|   1|[cm001](linkto) |[hw01](linkto) |Introduction to reproducible research |
-|    1|   2|[cm002](linkto) |               |Creating a dynamic report             |
-|    1|   3|[cm003](linkto) |               |Continue the tutorial                 |
-|    1|   4|[cm004](linkto) |               |Wrapping up the tutorial              |
-|    2|   5|[cm005](linkto) |[hw02](linkto) |Planning for reproducibility          |
-|    2|   6|[cm006](linkto) |               |Working on your own project           |
-|    2|   7|[cm007](linkto) |               |                                      |
-|    2|   8|[cm008](linkto) |               |                                      |
+|lessons         |assignments    |topics                                |
+|:---------------|:--------------|:-------------------------------------|
+|[cm001](linkto) |[hw01](linkto) |Introduction to reproducible research |
+|[cm002](linkto) |               |Creating a dynamic report             |
+|[cm003](linkto) |               |Continue the tutorial                 |
+|[cm004](linkto) |               |Wrapping up the tutorial              |
 
 
 

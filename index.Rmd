@@ -8,11 +8,12 @@ description: reproducible research for the R beginner with RStudio, knitr
 ```{r setup, include = FALSE}
 library(knitr)
 opts_chunk$set(message = FALSE, include = FALSE, echo = FALSE, warning = FALSE)
+library(readxl)
+library(dplyr)
 ```
 
 
 ```{r}
-library(readxl)
 df <- read_excel('pages/calendar.xlsx')
 df[is.na(df)] <- " " # replaces NAs with 2 blanks
 ```
@@ -22,12 +23,29 @@ In technical work or research that utilizes a computer, the three common file ty
 
 ### planning
 
-- Calendar
 - Syllabus and policies
 
+### calendar
+
 ```{r include = TRUE}
-kable(df)
+week_df <- df %>% 
+	filter(week == 1) %>% 
+	select(lessons, assignments, topics) %>%
+	rename('week 1' = lessons)
+kable(week_df)
 ```
+
+
+
+```{r include = TRUE}
+week_df <- df %>% 
+	filter(week == 2) %>% 
+	select(lessons, assignments, topics) %>%
+	rename('week 2' = lessons)
+kable(week_df)
+```
+
+
 
 
 
