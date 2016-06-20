@@ -4,7 +4,15 @@ title:  reproducible research
 tagline: for the R novice
 ---
 
-In technical work or research that utilizes a computer, the three common file types are data files, computer scripts to run the analysis, and presentation documents to report findings. This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings.
+In technical work or research that utilizes a computer, the three common
+
+file types are data files, computer scripts to run the analysis, and
+
+presentation documents to report findings. This course is about
+
+explicitly linking the technical report, paper, or talk to the software,
+
+scripts, and data files that generated the findings.
 
 
 
@@ -20,29 +28,157 @@ Syllabus and policies
 
 
 
-| week 1          |     | assign         |     | topics                                |
+<table>
 
-|:----------------|-----|:---------------|-----|:--------------------------------------|
+<thead>
 
-| [cm001](linkto) |     | [hw01](linkto) |     | Introduction to reproducible research |
+<tr class="header">
 
-| [cm002](linkto) |     |                |     | Creating a dynamic report             |
+<th align="left">week 1</th>
 
-| [cm004](linkto) |     |                |     | Wrapping up the tutorial              |
+<th align="left"></th>
+
+<th align="left">assign</th>
+
+<th align="left"></th>
+
+<th align="left">topics</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr class="odd">
+
+<td align="left"><a href="linkto">cm001</a></td>
+
+<td align="left"></td>
+
+<td align="left"><a href="linkto">hw01</a></td>
+
+<td align="left"></td>
+
+<td align="left">Introduction to reproducible research</td>
+
+</tr>
+
+<tr class="even">
+
+<td align="left"><a href="linkto">cm002</a></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left">Creating a dynamic report</td>
+
+</tr>
+
+<tr class="odd">
+
+<td align="left"><a href="linkto">cm004</a></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left">Wrapping up the tutorial</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 
 
-| week 2          |     | assign         |     | topics                       |
+<table>
 
-|:----------------|-----|:---------------|-----|:-----------------------------|
+<thead>
 
-| [cm005](linkto) |     | [hw02](linkto) |     | Planning for reproducibility |
+<tr class="header">
 
-| [cm006](linkto) |     |                |     | Working on your own project  |
+<th align="left">week 2</th>
 
-| [cm007](linkto) |     |                |     |                              |
+<th align="left"></th>
 
-| [cm008](linkto) |     |                |     |                              |
+<th align="left">assign</th>
+
+<th align="left"></th>
+
+<th align="left">topics</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr class="odd">
+
+<td align="left"><a href="linkto">cm005</a></td>
+
+<td align="left"></td>
+
+<td align="left"><a href="linkto">hw02</a></td>
+
+<td align="left"></td>
+
+<td align="left">Planning for reproducibility</td>
+
+</tr>
+
+<tr class="even">
+
+<td align="left"><a href="linkto">cm006</a></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left">Working on your own project</td>
+
+</tr>
+
+<tr class="odd">
+
+<td align="left"><a href="linkto">cm007</a></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+</tr>
+
+<tr class="even">
+
+<td align="left"><a href="linkto">cm008</a></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+<td align="left"></td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 
 
