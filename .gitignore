@@ -1,16 +1,25 @@
 _site
 
+# ignore R things
 .Renviron
 .Rhistory
 .Rproj.user
-
-
 *.Rproj
 
-
+# ignore docx except those in assets/downloads
 *.docx
-*/*.docx
+data/*.docx
+pages/*.docx
+reports/*.docx
+scripts/*.docx
+
+# ignore my notebooks
 */notebook*
-pages/*.html
+
+# ignore html except those needed to format web pages
 index.html
+data/*.html
+pages/*.html
+reports/*.html
+scripts/*.html
 
