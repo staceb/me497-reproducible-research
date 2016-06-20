@@ -14,12 +14,12 @@ and support materials for the website
 
 file/page names for class-material related
 
-class-related file name    | used for
--------------------------- | -----------------------------------
-cm001_descriptive-name     | lesson 001 class materials 
-slides001_descriptive-name | accompanying cm001_ 
-code001_descriptive-name   | accompanying cm001_ 
-data001_descriptive-name   | accompanting cm001_ 
+file name scheme      | used for
+--------------------- | -----------------------
+cm001_topic-label     | gh-page for lesson 001
+slides001_topic-label | accompany lesson 001 
+code001_topic-label   | accompany lesson 001
+data001_topic-label   | accompany lesson 001
 
 and I'll also have
 
