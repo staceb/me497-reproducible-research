@@ -3,6 +3,7 @@ layout: page
 title: reproducible research
 tagline: for the R novice
 description: reproducible research for the R beginner with RStudio, knitr
+output: html_document
 ---
 
 
