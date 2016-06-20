@@ -14,7 +14,9 @@ library(dplyr)
 
 
 ```{r}
-df <- read_excel('pages/calendar.xlsx')
+df <- read_excel('pages/calendar.xlsx') %>% 
+	mutate(space1 = NA, space2 = NA) %>%
+  select(week, lessons, space1, assign, space2, topics)
 df[is.na(df)] <- " " # replaces NAs with 2 blanks
 ```
 
@@ -30,8 +32,8 @@ In technical work or research that utilizes a computer, the three common file ty
 ```{r include = TRUE}
 week_df <- df %>% 
 	filter(week == 1) %>% 
-	select(lessons, assignments, topics) %>%
-	rename('week 1' = lessons)
+	select(-week) %>%
+	rename('week 1' = lessons, ' ' = space1, ' ' = space2)
 kable(week_df)
 ```
 
@@ -40,8 +42,8 @@ kable(week_df)
 ```{r include = TRUE}
 week_df <- df %>% 
 	filter(week == 2) %>% 
-	select(lessons, assignments, topics) %>%
-	rename('week 2' = lessons)
+		select(-week) %>%
+	rename('week 2' = lessons, ' ' = space1, ' ' = space2)
 kable(week_df)
 ```
 

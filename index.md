@@ -20,22 +20,22 @@ In technical work or research that utilizes a computer, the three common file ty
 ### calendar
 
 
-|week 1          |assignments    |topics                                |
-|:---------------|:--------------|:-------------------------------------|
-|[cm001](linkto) |[hw01](linkto) |Introduction to reproducible research |
-|[cm002](linkto) |               |Creating a dynamic report             |
-|[cm003](linkto) |               |Continue the tutorial                 |
-|[cm004](linkto) |               |Wrapping up the tutorial              |
+|week 1          |   |assign         |   |topics                                |
+|:---------------|:--|:--------------|:--|:-------------------------------------|
+|[cm001](linkto) |   |[hw01](linkto) |   |Introduction to reproducible research |
+|[cm002](linkto) |   |               |   |Creating a dynamic report             |
+|[cm003](linkto) |   |               |   |Continue the tutorial                 |
+|[cm004](linkto) |   |               |   |Wrapping up the tutorial              |
 
 
 
 
-|week 2          |assignments    |topics                       |
-|:---------------|:--------------|:----------------------------|
-|[cm005](linkto) |[hw02](linkto) |Planning for reproducibility |
-|[cm006](linkto) |               |Working on your own project  |
-|[cm007](linkto) |               |                             |
-|[cm008](linkto) |               |                             |
+|week 2          |   |assign         |   |topics                       |
+|:---------------|:--|:--------------|:--|:----------------------------|
+|[cm005](linkto) |   |[hw02](linkto) |   |Planning for reproducibility |
+|[cm006](linkto) |   |               |   |Working on your own project  |
+|[cm007](linkto) |   |               |   |                             |
+|[cm008](linkto) |   |               |   |                             |
 
 
 
