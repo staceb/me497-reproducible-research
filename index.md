@@ -19,19 +19,20 @@ Syllabus and policies
 ### class materials
 
 
-|week 1          |   |assign         |   |topics                                |
-|:---------------|:--|:--------------|:--|:-------------------------------------|
-|[cm001](linkto) |   |[hw01](linkto) |   |Introduction to reproducible research |
-|[cm002](linkto) |   |               |   |Creating a dynamic report             |
-|[cm004](linkto) |   |               |   |Wrapping up the tutorial              |
+| week 1|   |assign         |   |topics                                                |
+|------:|:--|:--------------|:--|:-----------------------------------------------------|
+|      1|   |[hw01](linkto) |   |[cm001](linkto) Introduction to reproducible research |
+|      2|   |               |   |[cm002](linkto)  Creating a dynamic report            |
+|      3|   |               |   |Continue the tutorial                                 |
+|      4|   |               |   |Wrapping up the tutorial                              |
 
 
-|week 2          |   |assign         |   |topics                       |
-|:---------------|:--|:--------------|:--|:----------------------------|
-|[cm005](linkto) |   |[hw02](linkto) |   |Planning for reproducibility |
-|[cm006](linkto) |   |               |   |Working on your own project  |
-|[cm007](linkto) |   |               |   |                             |
-|[cm008](linkto) |   |               |   |                             |
+| week 2|   |assign         |   |topics                       |
+|------:|:--|:--------------|:--|:----------------------------|
+|      1|   |[hw02](linkto) |   |Planning for reproducibility |
+|      2|   |               |   |Working on your own project  |
+|      3|   |               |   |                             |
+|      4|   |               |   |                             |
 
 
 
