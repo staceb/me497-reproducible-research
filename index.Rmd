@@ -3,6 +3,9 @@ layout: page
 title: reproducible research
 tagline: for the R novice
 description: reproducible research for the R beginner with RStudio, knitr
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include = FALSE}
