@@ -15,7 +15,7 @@ In technical work or research that utilizes a computer, the three common file ty
 
 Syllabus and policies 
 
-### calendar
+### class materials
 
 
 |week 1          |   |assign         |   |topics                                |
