@@ -12,7 +12,6 @@ library(readxl)
 library(dplyr)
 ```
 
-
 ```{r}
 df <- read_excel('pages/calendar.xlsx') %>% 
 	mutate(space1 = NA, space2 = NA) %>%
@@ -36,8 +35,6 @@ week_df <- df %>%
 	rename('week 1' = lessons, ' ' = space1, ' ' = space2)
 kable(week_df)
 ```
-
-
 
 ```{r include = TRUE}
 week_df <- df %>% 
@@ -112,8 +109,6 @@ Week 10
 - Topic [assignments] [tutorials] [slides] [notes] [links]  
 -->
 
-
-### 
 
 
 
