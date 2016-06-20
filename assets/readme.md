@@ -14,12 +14,12 @@ and support materials for the website
 
 file/page names for class-material related
 
-
-cm001_descriptive-name     | for lesson 00n class materials 
+class-related file name    | used for
 -------------------------- | -----------------------------------
-slides001_descriptive-name | accompanying cm001_descriptive-name 
-code001_descriptive-name   | accompanying cm001_descriptive-name 
-data001_descriptive-name   | accompanting cm001_descriptive-name 
+cm001_descriptive-name     | lesson 001 class materials 
+slides001_descriptive-name | accompanying cm001_ 
+code001_descriptive-name   | accompanying cm001_ 
+data001_descriptive-name   | accompanting cm001_ 
 
 and I'll also have
 
