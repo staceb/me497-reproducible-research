@@ -5,27 +5,43 @@ tagline: for the R novice
 description: reproducible research for the R beginner with RStudio, knitr
 ---
 
-In technical work or research that utilizes a computer, the three common file types are 
-data files, computer scripts to run the analysis, and presentation documents to report findings. This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings. 
+```{r setup, include = FALSE}
+library(knitr)
+opts_chunk$set(message = FALSE, include = FALSE, echo = FALSE, warning = FALSE)
+```
+
+
+```{r}
+library(readxl)
+df <- read_excel('pages/calendar.xlsx')
+df[is.na(df)] <- " " # replaces NAs with 2 blanks
+```
+
+
+In technical work or research that utilizes a computer, the three common file types are data files, computer scripts to run the analysis, and presentation documents to report findings. This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings. 
 
 ### planning
 
 - Calendar
 - Syllabus and policies
 
+```{r include = TRUE}
+kable(df)
+```
+
+
+
+<!--
+
 ### materials
 
 Week 1
 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
+- [Topic] [Assignment] 
+- [Topic] [Assignment] 
+- [Topic] [Assignment] 
 
-Week 2 
 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
-- Topic [assignments] [tutorials] [slides] [notes] [links] 
 
 Week 3 
 
@@ -74,6 +90,8 @@ Week 10
 - Topic [assignments] [tutorials] [slides] [notes] [links] 
 - Topic [assignments] [tutorials] [slides] [notes] [links] 
 - Topic [assignments] [tutorials] [slides] [notes] [links]  
+-->
+
 
 ### 
 
