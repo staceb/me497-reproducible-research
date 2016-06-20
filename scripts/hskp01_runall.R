@@ -2,19 +2,13 @@
 # copies and removes files
 # runs R scripts 
 
+# load my functions
+source('scripts/hskp02_housekeeping-functions.R')
+
 # ----------------------------------------------------
 # knit Rmd -> md with the correct header for gh-pages
 # this requires that the Rmd files DO NOT set knitr root.dir to project-WD
 # instead use relative paths from their directories
-library(knitr)
-library(stringr)
-
-# knit one file at a time
-knit_Rmd_to_md <- function(file_name) {
-  input  <- file_name
-  output <- str_replace(file_name, '.Rmd', '.md')
-  knit(input = input, output = output)
-}
 
 # list only those directories where knit to md needed
 paths_to_search <- c(".", "./pages")
