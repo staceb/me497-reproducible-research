@@ -3,21 +3,38 @@
 # runs R scripts 
 
 # ----------------------------------------------------
-# Knit Rmd -> md to produce the correct header
-# used by all .md files in gh-pages
+# knit Rmd -> md with the correct header for gh-pages
+# this requires that the Rmd files DO NOT set knitr root.dir to project-WD
+# instead use relative paths from their directories
 library(knitr)
 library(stringr)
 opts_chunk$set(include=TRUE, echo=FALSE, message=FALSE)
 
+# do the knitting
 knit_Rmd_to_md <- function(file_name) {
   input  <- file_name
   output <- str_replace(file_name, '.Rmd', '.md')
   knit(input = input, output = output)
 }
 
-# obtain list of all Rmd files in project and knit them all to .md
-Rmd_files <- list.files(path = ".", pattern = "\\.Rmd$", recursive = TRUE)
-sapply(Rmd_files, render_Rmd_to_md)
+# find all Rmd files in the project directory for print to console
+find_all_Rmd <- list.files(path = "."
+													 , pattern = "\\.Rmd$"
+													 , full.names = TRUE
+													 , recursive = TRUE)
+
+# list only those directories where knit to md needed
+paths_to_search <- c(".", "./pages")
+
+# obtain file names with full paths
+Rmd_rendered <- list.files(path = paths_to_search
+												, pattern = "\\.Rmd$"
+												, full.names = TRUE)
+
+# knit
+sapply(Rmd_rendered, knit_Rmd_to_md)
+
+
 
 
 
@@ -55,6 +72,10 @@ unlink("reports/*.html")
 
 
 # ----------------------------------------------------
+
+cat("\n\nRmd files in project directory\n", find_all_Rmd, sep = "\n")
+cat("\nRmd files rendered by runall.R\n", Rmd_rendered, sep = "\n")
+
 # try render
 # library(rmarkdown)
 # render('index.Rmd', clean = FALSE) # creates md

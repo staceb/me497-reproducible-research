@@ -7,7 +7,7 @@ output: html_document
 
 ```{r setup, include = FALSE}
 library(knitr)
-# use relative paths from this directory
+# to use runall, use relative paths from this directory
 # do not use: opts_knit$set(root.dir = '../')
 opts_chunk$set(include = FALSE, echo = FALSE, message = FALSE, warning = FALSE)
 ```
