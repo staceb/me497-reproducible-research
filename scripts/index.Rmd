@@ -1,0 +1,33 @@
+---
+layout: page
+title: reproducible research
+tagline: for the R novice
+description: Introduces R, RStudio, and R Markdown as tools to create
+             dynamically reproducible reports. For R novices. 
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+In technical work or research that utilizes a computer, the three common file types are  
+
+- data files  
+- computer scripts to run the analysis  
+- presentation documents to report findings 
+
+This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings. 
+
+
+### week 0 
+
+- [Syllabus](pages/cm001_syllabus.html) 
+- [Major deadlines](pages/cm002_deadlines.html)
+
+
+### week 1
+
+
+### week 2 
+
+
+
