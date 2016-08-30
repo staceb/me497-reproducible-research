@@ -6,6 +6,15 @@ _site
 .Rproj.user
 *.Rproj
 
+# ignore holding folders
+*/holding
+data/holding
+pages/holding
+reports/holding
+resources/holding
+scripts/holding
+slides/holding
+
 # ignore docx
 *.docx
 data/*.docx
