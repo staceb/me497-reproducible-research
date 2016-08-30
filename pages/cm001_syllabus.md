@@ -37,7 +37,7 @@ Drop in any time. If I'm engaged, please knock and let me know you are waiting. 
 
 ### required textbook
 
-Christopher Gandrud, 2015, *Reproducible Research with R and RStudio, 2/e*, CRC Press, Taylor & Francis Group.
+@Gandrud2015    
 
 ![](../resources/images/gandrud-cover.jpg)
 
