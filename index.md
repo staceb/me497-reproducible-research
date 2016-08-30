@@ -4,9 +4,14 @@ title: reproducible research
 tagline: for the R novice
 ---
 
-The main goal of the course is to help you establish a habitual  *workflow* that "weaves the principles of reproducibility throughout your entire research project, from data gathering to the statistical analysis, and the presentation of results" (Gandrud 2015). 
+We explore the principles and practices of reproducible research, from gathering data to analyzing data and presenting results. Students implement a  workflow that includes file management, version control, literate programming, data carpentry, creating tables and graphs, and reporting---all within the context of producing reproducible technical reports.
 
-Our software tools include R, RStudio, R Markdown, Git, and GitHub. 
+### recommended resources 
+
+- [*R in Action, 2/e*](https://www.manning.com/books/r-in-action-second-edition) by Robert Kabacoff, 2015, Manning Publications. If you want to buy just one good reference for R, this is the one I recommend. It covers R basics including statistical analysis and graphics. The author also maintains the [Quick R website](http://www.statmethods.net/) that is a big help for everyday R tasks. 
+- [*R Graphics, 2/e*](https://www.crcpress.com/R-Graphics-Second-Edition/Murrell/p/book/9781439831762) by Paul Murrell, 2011, CRC Press. This is the book to have when you want to know all about the major R graphics systems (`base, grid, lattice, ggplot2`) this is the book.  The author's [website for the book](https://www.stat.auckland.ac.nz/~paul/RG2e/) has the code for every figure in the book.  
+- [R Markdown](http://rmarkdown.rstudio.com/) 
+- [knitr options](http://yihui.name/knitr/options/) 
 
 
 ### week 0 

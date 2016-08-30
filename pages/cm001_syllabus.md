@@ -36,21 +36,7 @@ Christopher Gandrud, 2015, *Reproducible Research with R and RStudio, 2/e*, CRC 
 
 ![](../resources/images/gandrud-cover.jpg)    
 
-<br>Recommended references 
-
-If you want to buy just one book to help you learn R, I recommend  
-
-- Robert I. Kabacoff, 2015, [*R in Action, 2/e*](https://www.manning.com/books/r-in-action-second-edition), Manning Publications.  
-
-If you want to have a reference for all of the core R graphics systems, I recommend   
-
-- Paul Murrell, 2011, [*R Graphics, 2/e*](https://www.crcpress.com/R-Graphics-Second-Edition/Murrell/p/book/9781439831762), CRC Press. 
-
-Online references 
-
-- http://rmarkdown.rstudio.com/ for R Markdown
-- http://yihui.name/knitr/options/ for `knitr` options  
-
+ 
 
 
 ### objectives
