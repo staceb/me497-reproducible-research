@@ -6,23 +6,27 @@ _site
 .Rproj.user
 *.Rproj
 
-# ignore docx except those in assets/downloads
+# ignore docx
 *.docx
 data/*.docx
 pages/*.docx
-reports/*.docx
+#reports/*.docx
+resources/*.docx
 scripts/*.docx
+slides/*.docx
 
 # ignore my notebooks
 */notebook*
 
-# ignore html except those needed to format web pages
-index.html
-data/*.html
-pages/*.html
-reports/*.html
-scripts/*.html
+# ignore html
+*.html
+# data/*.html
+# pages/*.html
+# reports/*.docx
+# resources/*.html
+# scripts/*.html
+slides/*.html
 
 # ignore pages/Rmd
-pages/*.Rmd
+# pages/*.Rmd
 
