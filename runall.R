@@ -34,10 +34,11 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 	# extract the header lines, including dashes
 	starting_lines <- Rmd_source_file[header_limits[1]:header_limits[2]]
 	
-	# keep title and tagline
+	# keep title and tagline and bib
 	i_title   <- grep("title",   starting_lines)
 	i_tagline <- grep("tagline", starting_lines)
-	title_and_tagline <- starting_lines[c(i_title:i_tagline)]
+	i_bib     <- grep("bibliography", starting_lines)
+	title_and_tagline <- starting_lines[c(i_title, i_bib, i_tagline)]
 	
 	# remove the first # heading-1 line from the md file
 	i_hashtag <- grep("#",  md_source_file)[1]

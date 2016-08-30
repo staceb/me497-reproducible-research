@@ -20,5 +20,5 @@ Our software tools include R, RStudio, R Markdown, Git, and GitHub.
 
 ### week 2 
 
-### references
+
 

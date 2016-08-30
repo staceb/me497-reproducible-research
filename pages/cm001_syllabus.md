@@ -1,4 +1,8 @@
-# syllabus
+---
+layout: page
+title: "syllabus"
+bibliography: ../scripts/me497_references.bib  
+---
 
 ### me497/me597 reproducible research 
 
