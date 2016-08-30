@@ -1,7 +1,4 @@
----
-layout: page
-title: "syllabus"
----
+# syllabus
 
 ### me497/me597 reproducible research 
 

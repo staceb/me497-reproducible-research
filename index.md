@@ -1,6 +1,7 @@
 ---
 layout: page
 title: reproducible research
+bibliography: me497_references.bib
 tagline: for the R novice
 ---
 

@@ -1,13 +1,13 @@
 ---
 layout: page
 title: reproducible research
+bibliography: me497_references.bib
 tagline: for the R novice
 description: Introduces R, RStudio, and R Markdown as tools to create
              dynamically reproducible reports. For R novices. 
 output: 
   html_document:
     keep_md: TRUE
-bibliography: me497_references.bib
 ---
 
 The main goal of the course is to help you establish a habitual  *workflow* that "weaves the principles of reproducibility throughout your entire research project, from data gathering to the statistical analysis, and the presentation of results" [@Gandrud2015]. 

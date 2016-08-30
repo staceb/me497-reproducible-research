@@ -37,7 +37,7 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 	# keep title and tagline
 	i_title   <- grep("title",   starting_lines)
 	i_tagline <- grep("tagline", starting_lines)
-	title_and_tagline <- starting_lines[c(i_title, i_tagline)]
+	title_and_tagline <- starting_lines[c(i_title:i_tagline)]
 	
 	# remove the first # heading-1 line from the md file
 	i_hashtag <- grep("#",  md_source_file)[1]
