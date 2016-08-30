@@ -1,5 +1,5 @@
 ### data
 
-The data directory includes data files I use to create the workshop as well as data used in performing the work of the workshop.
+The data directory includes data files I use in the course.
 
-Data used by participants, however is copied from here to the assets/downloads folder. 
+
