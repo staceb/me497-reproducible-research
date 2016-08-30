@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "work summary and due dates"
+title: "work summary"
 tagline: "reproducible research for the R novice"
 ---
 
