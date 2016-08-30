@@ -1,13 +1,4 @@
----
-layout: page
-title: reproducible research
-tagline: for the R novice
-description: Introduces R, RStudio, and R Markdown as tools to create
-             dynamically reproducible reports. For R novices. 
-output: 
-  html_document:
-    keep_md: TRUE
----
+# reproducible research
 
 We explore the principles and practices of reproducible research, from gathering data to analyzing data and presenting results. Students implement a  workflow that includes file management, version control, literate programming, data carpentry, creating tables and graphs, and reporting---all within the context of producing reproducible technical reports.
 
