@@ -4,13 +4,9 @@ title: reproducible research
 tagline: for the R novice
 ---
 
-In technical work or research that utilizes a computer, the three common file types are  
+The main goal of the course is to help you establish a habitual  *workflow* that "weaves the principles of reproducibility throughout your entire research project, from data gathering to the statistical analysis, and the presentation of results" [@Gandrud2015]. 
 
-- data files  
-- computer scripts to run the analysis  
-- presentation documents to report findings 
-
-This course is about explicitly linking the technical report, paper, or talk to the software, scripts, and data files that generated the findings. 
+Our software tools include R, RStudio, R Markdown, Git, and GitHub. 
 
 
 ### week 0 
@@ -24,5 +20,5 @@ This course is about explicitly linking the technical report, paper, or talk to 
 
 ### week 2 
 
-
+### references
 

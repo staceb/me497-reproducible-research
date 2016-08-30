@@ -1,8 +1,18 @@
-# syllabus
+---
+layout: page
+title: "syllabus"
+---
 
 ### me497/me597 reproducible research 
 
-We explore the practice and principles of reproducible research by learning to organize a technical project for reproducibility from the beginning of the project and to explicitly link the files for computing, results, and narrative. The course takes you through an entire reproducible research workflow. Our software environment is R & RStudio---no prior experience required. The course is open to all majors (a mechanical engineering background is not required). 
+We explore the principles and practices of reproducible research, from gathering data to analyzing data and presenting results. Students implement a  workflow to create dynamically reproducible technical reports. 
+
+
+
+
+We implement a  reproducible workflow by creating dynamically reproducible technical reports
+
+by learning to organize a technical project for reproducibility from the beginning of the project and to explicitly link the files for computing, results, and narrative. The course takes you through an entire reproducible research workflow. Our software environment is R & RStudio---no prior experience required. The course is open to all majors (a mechanical engineering background is not required). 
 
 4R-0L-4C (4 hours lecture/week, 0 lab, 4 credit hours)
 
@@ -18,7 +28,7 @@ We explore the practice and principles of reproducible research by learning to o
 
 Richard Layton    
 Moench Hall C-217    
-tel: 812-877-8905    
+812-877-8905    
 layton@rose-hulman.edu    
 
 Drop in any time. If I'm engaged, please knock and let me know you are waiting. If I miss you, please email an appointment request.
@@ -26,7 +36,9 @@ Drop in any time. If I'm engaged, please knock and let me know you are waiting. 
 
 ### required textbook
 
-Christopher Gandrud, *Reproducible Research with R and RStudio, 2/e*, CRC Press, 2015. 
+Christopher Gandrud, 2015, *Reproducible Research with R and RStudio, 2/e*, CRC Press, Taylor & Francis Group.
+
+![](../resources/images/gandrud-cover.jpg)
 
 ### objectives
 
@@ -51,6 +63,8 @@ The four major deliverables and their weights are:
 
 Grades awarded are based on the Institute [standards](www.rose-hulman.edu/offices-services/registrar/rules-procedures/grades.aspx), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that*minimum standards have been met*.
 
+
+### references
 
 
 
