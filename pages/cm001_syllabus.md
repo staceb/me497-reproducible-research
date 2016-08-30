@@ -62,7 +62,7 @@ The four major deliverables and their weights are:
 - (40%) Major term project in data gathering, analysis, and reporting 
 - (25%) Reproducing someone else's project and critiquing the work 
 
-Grades awarded are based on the Institute [standards](www.rose-hulman.edu/offices-services/registrar/rules-procedures/grades.aspx), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that*minimum standards have been met*.
+Grades awarded are based on the Institute [standards](www.rose-hulman.edu/offices-services/registrar/rules-procedures/grades.aspx), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that *minimum standards have been met*.
 
 
 ### references
