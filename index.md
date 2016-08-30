@@ -27,7 +27,7 @@ And if you like having a book handy:
 ### week 0 
 
 - [Syllabus](pages/cm001_syllabus.html) 
-- [Deadlines](pages/cm002_deadlines.html)
+- [Outline of due dates](pages/cm002_deadlines.html)
 
 
 ### week 1
