@@ -14,9 +14,9 @@ We explore the principles and practices of reproducible research, from gathering
 ### useful links 
 
 - [Quick R website](http://www.statmethods.net/) by Robert Kabacoff, a big help for everyday R tasks. 
-- [R Markdown](http://rmarkdown.rstudio.com/), by the folks at RStudio. 
-- [knitr options](http://yihui.name/knitr/options/), by Yihui Xie, the author of knitr. 
-- [R-bloggers](https://www.r-bloggers.com/), by Tal Galili, a searchable collection of blog posts by R bloggers everywhere. 
+- [R Markdown](http://rmarkdown.rstudio.com/) by the folks at RStudio. 
+- [knitr options](http://yihui.name/knitr/options/) by Yihui Xie, the author of knitr. 
+- [R-bloggers](https://www.r-bloggers.com/) by Tal Galili, a searchable collection of blog posts by R bloggers everywhere. 
 - [Stackoverflow](http://stackoverflow.com/questions/tagged/r), a searchable Q&A website for programming questions. 
 - [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham, for when you really want to understand R. 
 - [ggplot2 help](http://docs.ggplot2.org/current/index.html) by Hadley Wickham and Winston Chang, for all of the details. 
