@@ -1,11 +1,10 @@
 ---
 layout: page
 title: reproducible research
-bibliography: ../scripts/me497_references.bib
 tagline: for the R novice
 ---
 
-The main goal of the course is to help you establish a habitual  *workflow* that "weaves the principles of reproducibility throughout your entire research project, from data gathering to the statistical analysis, and the presentation of results" [@Gandrud2015]. 
+The main goal of the course is to help you establish a habitual  *workflow* that "weaves the principles of reproducibility throughout your entire research project, from data gathering to the statistical analysis, and the presentation of results" (Gandrud 2015). 
 
 Our software tools include R, RStudio, R Markdown, Git, and GitHub. 
 
