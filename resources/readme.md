@@ -1,13 +1,9 @@
-### assets
+### resources
 
-The assets directory contains support materials for the course. I'm treating the assets folder as a place to collect everything that isn't data, reports, or scripts. 
+The resources directory contains support materials for the course that are non-reproducible. 
 
 - files for students to download (collected in one folder) 
 - non-data images, such as screen-shots or logos 
-
-and support materials for the website
-
-- css themes used by the web pages 
 
 
 ### naming convention 
