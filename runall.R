@@ -66,6 +66,8 @@ Rmd_page_scripts <- list.files(path = "pages"
 													)
 sapply(Rmd_page_scripts, function(x) render(x))
 
+
+
 # edit the md header for gh-pages
 sapply(Rmd_page_scripts, failwith(NULL, Rmd_to_gh_pages))
 
