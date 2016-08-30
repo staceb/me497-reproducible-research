@@ -8,11 +8,11 @@ output:
 
 ### description 
 
+ME497/ME597 Reproducible Research (4R-0L-4C). 
+
 We explore the principles and practices of reproducible research, from gathering data to analyzing data and presenting results. Students implement a  workflow that includes file management, version control, literate programming, data carpentry, creating tables and graphs, and reporting---all within the context of producing reproducible technical reports. 
 
 The software environment is R & RStudio---no prior experience required. The course is open to all majors---no background in mechanical engineering is required. 
-
-4R-0L-4C (4 hours lecture/week, 0 lab, 4 credit hours)
 
 
 ### prerequisites
@@ -24,13 +24,11 @@ The software environment is R & RStudio---no prior experience required. The cour
 
 ### instructor
 
-Richard Layton    
+Richard Layton, Ph.D., P.E.    
+Professor of Mechanical Engineering    
 Moench Hall C-217    
-812-877-8905    
 layton@rose-hulman.edu    
-
-Drop in any time. If I'm engaged, please knock and let me know you are waiting. If I miss you, please email an appointment request.
-
+812-877-8905    
 
 ### required textbook
 
@@ -51,18 +49,19 @@ After successfully completing this course, students should be able to:
 - Organize directories and files for reproducibility 
 - Create reproducible reports using R and RStudio 
 - Reproduce someone else's reproducible project 
-- Use GitHub for version control 
+- Implement version control using Git and GitHub 
  
 ### grades
 
-The four major deliverables and their weights are: 
+Grades awarded are based on the [Institute standards](www.rose-hulman.edu/offices-services/registrar/rules-procedures/grades.aspx), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that *minimum standards have been met*. 
 
-- (10%) Recreating the calibration report example 
-- (25%) Recreating one's own report (prior work) in reproducible form 
-- (40%) Major term project in data gathering, analysis, and reporting 
-- (25%) Reproducing someone else's project and critiquing the work 
+The major deliverables and their relative weights are: 
 
-Grades awarded are based on the Institute [standards](www.rose-hulman.edu/offices-services/registrar/rules-procedures/grades.aspx), for example, an "A" is an *honor grade*, a "B" is awarded for *thorough competence*, and a "C" indicates that *minimum standards have been met*.
+- (10%) Recreating the example report (tutorials)  
+- (25%) Recreating one's own prior report in reproducible form 
+- (25%) Cloning, evaluating, and reproducing someone else's project 
+- (40%) Major term-project in data gathering, data carpentry, analysis, and reporting 
+
 
 
 ### academic accommodations
@@ -93,6 +92,10 @@ Do not compare one another's code line by line, do not share your files, do not 
 ### caveat
 
 I reserve the right to modify the course content, schedule, policies, etc. outlined in this syllabus. I will do my best to give you adequate notice of revisions.  
+
+---
+
+[back to main page](../index.html)
 
 
 
