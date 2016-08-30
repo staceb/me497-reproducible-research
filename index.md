@@ -14,7 +14,7 @@ We explore the principles and practices of reproducible research, from gathering
 ### week 0 
 
 - [Syllabus](pages/cm001_syllabus.html) 
-- [Work summary and due dates](pages/cm002_deadlines.html)
+- [Project due dates](pages/cm002_deadlines.html)
 
 
 ### week 1
@@ -25,13 +25,13 @@ We explore the principles and practices of reproducible research, from gathering
 
 ### help  
 
-- [Quick R website](http://www.statmethods.net/) by Robert Kabacoff, a big help for everyday R tasks. 
-- [R Markdown](http://rmarkdown.rstudio.com/) by the folks at RStudio. 
-- [knitr options](http://yihui.name/knitr/options/) by Yihui Xie, the author of knitr.  
-- [R-bloggers](https://www.r-bloggers.com/) by Tal Galili, a searchable collection of blog posts by R bloggers everywhere. 
+- [Quick R](http://www.statmethods.net/) for everyday R tasks  
+- [R Markdown](http://rmarkdown.rstudio.com/) for syntax help  
+- [knitr options](http://yihui.name/knitr/options/) 
+- [R-bloggers](https://www.r-bloggers.com/), a searchable collection of R blog posts. 
 - [Stackoverflow](http://stackoverflow.com/questions/tagged/r), a searchable Q&A website for programming questions. 
-- [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham, for when you really want to understand R. 
-- [ggplot2 help](http://docs.ggplot2.org/current/index.html) by Hadley Wickham and Winston Chang, for all of the details. 
+- [Advanced R](http://adv-r.had.co.nz/), when you really want to understand R
+- [ggplot2 help](http://docs.ggplot2.org/current/index.html) for all of the details 
 
 ### books I recommend
 
