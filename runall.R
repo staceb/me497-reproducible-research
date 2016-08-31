@@ -70,12 +70,12 @@ sapply(Rmd_page_scripts, function(x) render(x))
 sapply(Rmd_page_scripts, failwith(NULL, Rmd_to_gh_pages))
 
 
-# render Rmd scripts for slides
-Rmd_page_scripts <- list.files(path = "slides"
-															 , pattern = "\\.Rmd$"
-															 , full.names = TRUE
-)
-sapply(Rmd_page_scripts, function(x) render(x))
+# slides take a while...do individually
+# Rmd_page_scripts <- list.files(path = "slides"
+# 															 , pattern = "\\.Rmd$"
+# 															 , full.names = TRUE
+# )
+# sapply(Rmd_page_scripts, function(x) render(x))
 
 
 

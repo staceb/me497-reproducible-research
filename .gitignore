@@ -28,13 +28,13 @@ slides/*.docx
 */notebook*
 
 # ignore html
-*.html
+# *.html
 # data/*.html
 # pages/*.html
 # reports/*.docx
 # resources/*.html
 # scripts/*.html
-slides/*.html
+# slides/*.html
 
 # ignore pages/Rmd
 # pages/*.Rmd
