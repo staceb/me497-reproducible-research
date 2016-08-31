@@ -89,6 +89,8 @@ file.rename(from = 'scripts/index.md', to = './index.md')
 
 # delete byproduct files
 unlink(".Rhistory")
+unlink("*.html")
+unlink("data/*.html")
 unlink("pages/*.html")
 unlink("scripts/*.html")
 
