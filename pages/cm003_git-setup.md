@@ -4,11 +4,13 @@ title: "setup git and github"
 tagline: "reproducible research for the R novice"
 ---
 
-### please read  
+### work you push to GitHub is the work I grade  
 
 Git is version control software you install on your machine. GitHub is a hosting service that provides an online home for your Git-based projects---critically important for sharing with collaborators. 
 
-- [Why Git?](http://happygitwithr.com/big-picture.html#big-picture) 
+- [Why Git?](http://happygitwithr.com/big-picture.html#big-picture) Please read. 
+
+Getting it all going may be a little painful, but after the first couple of weeks, using Git and GitHub will become second nature.  
 
 
 ### setup git and github  

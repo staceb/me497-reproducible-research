@@ -15,7 +15,7 @@ We explore the principles and practices of reproducible research, from gathering
 
 - [Syllabus](pages/cm001_syllabus.html) 
 - [Project due dates](pages/cm002_deadlines.html) 
-- [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio) 
+- [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio) Do the installation and a project setup. 
 - [Setup Git and GitHub](pages/cm003_git-setup.html)
 
 
