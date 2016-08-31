@@ -14,7 +14,9 @@ We explore the principles and practices of reproducible research, from gathering
 ### week 0 
 
 - [Syllabus](pages/cm001_syllabus.html) 
-- [Project due dates](pages/cm002_deadlines.html)
+- [Project due dates](pages/cm002_deadlines.html) 
+- [Install R and RStudio](https://github.com/DSR-RHIT/install-R-and-RStudio) 
+- [Setup Git and GitHub](pages/cm003_git-setup.html)
 
 
 ### week 1
