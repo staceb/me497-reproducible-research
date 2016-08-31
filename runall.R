@@ -59,20 +59,23 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 
 
 
-# render Rmd scripts for pages only
+# render Rmd scripts for pages
 Rmd_page_scripts <- list.files(path = "pages"
 													, pattern = "\\.Rmd$"
 													, full.names = TRUE
 													)
 sapply(Rmd_page_scripts, function(x) render(x))
 
-
-
 # edit the md header for gh-pages
 sapply(Rmd_page_scripts, failwith(NULL, Rmd_to_gh_pages))
 
 
-
+# render Rmd scripts for slides
+Rmd_page_scripts <- list.files(path = "slides"
+															 , pattern = "\\.Rmd$"
+															 , full.names = TRUE
+)
+sapply(Rmd_page_scripts, function(x) render(x))
 
 
 
@@ -88,6 +91,7 @@ file.rename(from = 'scripts/index.md', to = './index.md')
 unlink(".Rhistory")
 unlink("pages/*.html")
 unlink("scripts/*.html")
+
 
 # unlink("./*.html")
 # unlink("reports/*.html")
