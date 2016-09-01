@@ -9,6 +9,7 @@ suppressMessages(library(dplyr))
 library(rmarkdown)
 library(stringr)
 library(readr)
+library(knitr)
 
 # function for editing the md header 
 #     Extract header from an Rmd file
@@ -55,10 +56,6 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 			, file = md_file, sep = '\n', append = TRUE)
 }
 
-
-
-
-
 # render Rmd scripts for pages
 Rmd_page_scripts <- list.files(path = "pages"
 													, pattern = "\\.Rmd$"
@@ -69,16 +66,6 @@ sapply(Rmd_page_scripts, function(x) render(x))
 # edit the md header for gh-pages
 sapply(Rmd_page_scripts, failwith(NULL, Rmd_to_gh_pages))
 
-
-# slides take a while...do individually
-# Rmd_page_scripts <- list.files(path = "slides"
-# 															 , pattern = "\\.Rmd$"
-# 															 , full.names = TRUE
-# )
-# sapply(Rmd_page_scripts, function(x) render(x))
-
-
-
 # render index and move to main directory
 render("scripts/index.Rmd")
 sapply("scripts/index.Rmd", failwith(NULL, Rmd_to_gh_pages))
@@ -86,17 +73,44 @@ file.rename(from = 'scripts/index.md', to = './index.md')
 
 
 
+# render Rnw for slides, uses knitr::knit2pdf
+Rnw_slide_scripts <- list.files(path = "slides"
+															 , pattern = "\\.Rnw$"
+															 , full.names = TRUE
+)
+# create output file names
+tex_slide_files <- str_replace(Rnw_slide_scripts, 'Rnw$', 'tex')
+# knit2pdf, knits to tex
+sapply(Rnw_slide_scripts, function(x) knit2pdf(input = Rnw_slide_scripts, output = tex_slide_files))
 
-# delete byproduct files
+
+
+
+
+
+
+# delete R byproducts
 unlink(".Rhistory")
+
+# delete html byproducts
 unlink("*.html")
 unlink("data/*.html")
 unlink("pages/*.html")
 unlink("scripts/*.html")
 
+# delete tex byproducts
+unlink("slides/*.toc")
+unlink("slides/*concordance*")
+unlink("slides/*.snm")
+unlink("slides/*.nav")
+unlink("slides/*.gz")
+unlink("slides/*.log")
+unlink("slides/*.aux")
+unlink("slides/*.out")
+unlink(tex_slide_files)
 
-# unlink("./*.html")
-# unlink("reports/*.html")
+
+
 
 
 
