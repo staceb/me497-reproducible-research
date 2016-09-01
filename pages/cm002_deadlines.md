@@ -37,7 +37,7 @@ tagline: "reproducible research for the R novice"
 
 ---
 
-[back to main page](../index.html)
+[Main page](../index.html)
 
 
 

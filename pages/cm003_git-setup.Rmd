@@ -31,4 +31,6 @@ There are a few instructions that ask you to type commands in the "shell". To ac
 - [Cache your username and password](http://happygitwithr.com/credential-caching.html#credential-caching) or  so you don’t need to authenticate yourself to GitHub interactively ad nauseum. Alternatively, you can [set up SSH keys](http://happygitwithr.com/ssh-keys.html#ssh-keys).  
 - [Prove RStudio can find local Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github) and, therefore, can talk to GitHub 
 
+---
 
+[Main page](../index.html)

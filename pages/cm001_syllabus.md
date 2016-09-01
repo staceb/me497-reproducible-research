@@ -93,8 +93,7 @@ I reserve the right to modify the course content, schedule, policies, etc. outli
 
 ---
 
-[back to main page](../index.html)
-
+[Main page](../index.html)
 
 
 

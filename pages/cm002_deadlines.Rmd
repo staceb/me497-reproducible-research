@@ -39,7 +39,7 @@ output:
 
 ---
 
-[back to main page](../index.html)
+[Main page](../index.html)
 
 
 
