@@ -1,0 +1,103 @@
+---
+title: "Load-cell calibration --- graph"
+author: "Richard Layton"
+date: '2016-08-24'
+output: html_document
+---
+
+```{r 03-01, include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = '../')
+opts_chunk$set(echo = TRUE)
+```
+
+```{r 03-02}
+library(readr)
+library(ggplot2)
+```
+
+# Data
+
+Read the tidy data set.
+
+```{r 03-03}
+graph_data <- read_csv("data/02_calibr_data-tidy.csv")
+str(graph_data)
+```
+
+# Building the graph in layers
+
+Just show the data. 
+
+```{r 03-04}
+calibr_graph <- ggplot(data = graph_data, aes(x = input_lb, y = output_mV)) +
+	geom_point()
+
+print(calibr_graph)
+```
+
+Draw the regression line. 
+
+```{r 03-05}
+calibr_graph <- ggplot(data = graph_data, aes(x = input_lb, y = output_mV)) +
+	geom_smooth(method = 'lm') + 
+	geom_point()
+
+print(calibr_graph)
+```
+
+### changing the attributes of the graphical elements
+
+Start with the line and the data markers. 
+
+```{r 03-06}
+calibr_graph <- ggplot(data = graph_data, aes(x = input_lb, y = output_mV)) +
+	geom_smooth(method = 'lm', se = FALSE, color = 'gray70',  size = 0.5) + 
+	geom_point(size = 1.5, stroke = 0.7, shape = 21, color = 'black', fill= 'gray70')
+
+print(calibr_graph)
+```
+
+Edit the axis labels. 
+
+```{r 03-07}
+calibr_graph <- calibr_graph + 
+	xlab("Applied force (lb)") + 
+	ylab("Sensor reading (mV)")
+```
+
+Edit the locations of the axis markings to match the test points. 
+
+```{r 03-08}
+calibr_graph <- calibr_graph + 
+	scale_x_continuous(breaks = seq(from = 0.5, to = 4.5, by = 1)) +
+	scale_y_continuous(breaks = seq(from = 10, to = 90, by = 20))
+print(calibr_graph)
+```
+
+Assign a different theme. 
+
+```{r 03-09}
+calibr_graph <- calibr_graph + 
+	theme_light()
+print(calibr_graph)
+```
+
+Edit the theme.  
+
+```{r 03-10}
+calibr_graph <- calibr_graph +
+        theme(panel.grid.minor = element_blank(), axis.ticks.length = unit(2, "mm"))
+
+print(calibr_graph)
+```
+
+# print to file
+
+```{r 03-11}
+# print to file
+ggsave("results/03_calibr_graph.png", plot = calibr_graph, 
+			 width = 6, height = 4, units = "in", dpi = 300)
+```
+
+

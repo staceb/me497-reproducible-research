@@ -1,0 +1,130 @@
+---
+title: "Load-cell calibration --- linear regression"
+author: "Richard Layton"
+date: '2016-08-24'
+output: html_document
+---
+
+```{r 04-01, include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = '../')
+opts_chunk$set(echo = TRUE, collapse = TRUE)
+```
+
+```{r 04-02}
+library(readr)
+library(tibble)
+suppressPackageStartupMessages(library(dplyr))
+
+# for numbers printed to the screen
+options(digits = 3)
+```
+
+# Perform the linear regression 
+
+```{r 04-03}
+# read the tidy data
+calibr_data <- read_csv("data/02_calibr_data-tidy.csv")
+head(calibr_data)
+```
+
+- `input_lb` is the independent variable (*x*)
+- `output_mV` is the dependent variable (*y*)
+
+```{r 04-04}
+# perform the regression lm(y ~ x, data_frame)
+regr_results <- lm(output_mV ~ input_lb, calibr_data)
+
+# examine the result
+typeof(regr_results)
+attributes(regr_results)
+```
+
+# Extract relevant results 
+
+The output of `lm()` is a list of 12 named objects. For our basic analysis we want only 3 of the 12 objects. 
+
+```{r 04-05}
+# examine the three objects we want
+objects_to_subset <- c("coefficients", "residuals", "fitted.values")
+relevant_results  <- regr_results[objects_to_subset]
+
+str(relevant_results)
+```
+
+Extract the named objects from inside the  `relevant_results` list. 
+
+```{r 04-06}
+coeff <- relevant_results[['coefficients']] 
+resid <- relevant_results[['residuals']]
+y_fit <- relevant_results[['fitted.values']]
+str(coeff)
+str(resid)
+str(y_fit)
+
+# extract the values
+intercept <- coeff[['(Intercept)']]
+slope     <- coeff[['input_lb']]
+resid     <- unname(resid)
+y_fit     <- unname(y_fit)
+str(intercept)
+str(slope)
+str(resid)
+str(y_fit)
+```
+
+# Determine sensor accuracy
+
+The ANSI/ISA standard defines accuracy as the maximum positive and maximum negative residual. We conventionally report the largest absolute value of the two. 
+
+```{r 04-07}
+resid_max   <- max(resid)
+resid_min   <- abs(min(resid))
+resid_bound <- max(resid_max, resid_min) # find the largest of the two values
+```
+
+The standard defines output span as the difference between the max and min y-fitted values. Accuracy is usually reported as a percentage of output span. 
+
+```{r 04-08}
+output_span <- max(y_fit) - min(y_fit)
+accuracy    <- resid_bound / output_span * 100 # percent of span
+accuracy
+```
+
+# Collect results 
+
+Extract min/max inputs and outputs for the report. 
+
+```{r 04-09}
+input_min  <- min(calibr_data[['input_lb']])
+input_max  <- max(calibr_data[['input_lb']])
+output_min <- min(calibr_data[['output_mV']])
+output_max <- max(calibr_data[['output_mV']])
+```
+
+Collect those results I'd like to keep handy. 
+
+```{r 04-10}
+# create a data frame for saving specific results to file
+calibr_outcomes <- frame_data(
+	~'item',       ~'num',      ~'unit',
+	'input_min',   input_min,   'lb',
+	'input_max',   input_max,   'lb',
+	'output_min',  output_min,  'mV',
+	'output_max',  output_max,  'mV',
+	'slope',       slope,       'mV/lb',
+	'intercept',   intercept,   'mV',
+	'resid_bound', resid_bound, 'mV',
+	'accuracy',    accuracy,    '%'
+)
+
+calibr_outcomes
+```
+
+# Write results to file
+
+Save the `calibr_outcome` data frame to file. 
+
+```{r 04-11}
+write_csv(calibr_outcomes, "results/04_calibr_outcomes.csv")
+```

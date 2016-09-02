@@ -1,5 +1,5 @@
-# render Rmd to create md 
-# create gh-pages from Rmd
+# render Rmd to create md then gh-pages
+#v knit2pdf Rnw for slides
 # move and copy files 
 # delete byproduct files
 
@@ -11,7 +11,7 @@ library(stringr)
 library(readr)
 library(knitr)
 
-# function for editing the md header 
+# function for creating the md header formatted for gh-pages 
 #     Extract header from an Rmd file
 #     collect with the existing md file too.
 #     md file must already exist in scripts, created by Rmd header
@@ -23,12 +23,9 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 	
 	# read both files
 	Rmd_source_file <- read_lines(Rmd_file)
-	md_source_file  <- read_lines(md_file) # originally created by the Rmd file
+	md_source_file  <- read_lines(md_file) # created by the Rmd file
 	
-	# change md_file path from scripts to pages
-	# md_file <- str_replace(md_file, 'scripts', 'pages')
-	
-	# from the Rmd file, extract just the lines I want for the gh-page.md header
+	# from the Rmd, extract the lines I want for the gh-page.md header
 	# start by finding the line numbers of the first two sets of dashes
 	header_limits <- grep("---", Rmd_source_file)[1:2]
 	
@@ -45,7 +42,7 @@ Rmd_to_gh_pages <- function(Rmd_file) {
 	i_hashtag <- grep("#",  md_source_file)[1]
 	md_source_file <- md_source_file[-i_hashtag]
 	
-	# print to file
+	# crete the nex md file with a gh-page header
 	cat(c("---", "layout: page")
 			, file = md_file, sep = '\n')
 	cat(title_and_tagline
@@ -68,26 +65,16 @@ sapply(Rmd_page_scripts, failwith(NULL, Rmd_to_gh_pages))
 
 # render index and move to main directory
 render("scripts/index.Rmd")
-sapply("scripts/index.Rmd", failwith(NULL, Rmd_to_gh_pages))
+sapply("scripts/index.Rmd", function(x) render(x))
 file.rename(from = 'scripts/index.md', to = './index.md')
-
-
 
 # render Rnw for slides, uses knitr::knit2pdf
 Rnw_slide_scripts <- list.files(path = "slides"
 															 , pattern = "\\.Rnw$"
 															 , full.names = TRUE
 )
-# create output file names
 tex_slide_files <- str_replace(Rnw_slide_scripts, 'Rnw$', 'tex')
-# knit2pdf, knits to tex
-sapply(Rnw_slide_scripts, function(x) knit2pdf(input = Rnw_slide_scripts, output = tex_slide_files))
-
-
-
-
-
-
+Map(function(x, y) knit2pdf(input = x, output = y), Rnw_slide_scripts, tex_slide_files)
 
 # delete R byproducts
 unlink(".Rhistory")
