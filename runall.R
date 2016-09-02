@@ -94,12 +94,13 @@ unlink("slides/*.gz")
 unlink("slides/*.log")
 unlink("slides/*.aux")
 unlink("slides/*.out")
-unlink(tex_slide_files)
+unlink("slides/*.vrb")
 
 
 
 
 
+sapply(tex_slide_files, function(x) unlink(x))
 
 
 

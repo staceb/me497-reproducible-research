@@ -15,7 +15,7 @@ We explore the principles and practices of reproducible research, from gathering
 - If you already have R and RStudio installed, update them to the most recent versions. Update your packages also. 
 - [Setup Git and GitHub](pages/cm003_git-setup.html). We will start this in class on day 2. 
 - [Introduction (slides)](slides/slides001_introduction.pdf) 
-
+- [Overview of creating a reproducible report (slides)](slides/slides002_software.pdf) 
 
 ### week 1
 
